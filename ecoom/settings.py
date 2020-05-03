@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import environ 
 
-env = environ.ENV()
+env = environ.Env()
 
 # read the .env file
 environ.Env.read_env()
@@ -142,7 +142,7 @@ if DEBUG is False:
 
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2'
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': '',
             'USER': '',
             'PASSWORD': '',
