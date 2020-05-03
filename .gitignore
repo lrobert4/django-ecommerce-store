@@ -139,7 +139,7 @@ cython_debug/
 
 # staticfiles generated from Django application using `collectstatic`
 media
-static
+static_root
 
 .DS_Store 
 .idea
